@@ -123,6 +123,7 @@ const HomePage = () => {
               Find Your Perfect 
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"> Home</span>
               <br />in Ghana
+              {/* v2.0 - Force cache refresh */}
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
               🏠 Ghana's premier rental platform connecting landlords and renters across all 16 regions. 
