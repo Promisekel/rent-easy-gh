@@ -4,8 +4,7 @@ import {
   EyeIcon, 
   StarIcon, 
   ClockIcon,
-  ChartBarIcon,
-  ArrowTrendingUpIcon
+  ChartBarIcon
 } from '@heroicons/react/24/outline';
 
 const DashboardStats = ({ stats }) => {
@@ -79,10 +78,11 @@ const DashboardStats = ({ stats }) => {
                       <p className="text-2xl font-semibold text-gray-900">
                         {formatValue(item.value, item.name)}
                       </p>
-                      {item.change && (                      <p className="ml-2 flex items-baseline text-sm font-semibold text-green-600">
-                        <ArrowTrendingUpIcon className="h-4 w-4 mr-1" />
-                        {item.change}
-                      </p>
+                      {item.change && (
+                        <p className="ml-2 flex items-baseline text-sm font-semibold text-green-600">
+                          <span className="text-xs">📈</span>
+                          {item.change}
+                        </p>
                       )}
                     </div>
                     <p className="text-xs text-gray-500 mt-1">
